@@ -1,17 +1,17 @@
-name: Build and Deploy
-on: [push]
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
+# name: Build and Deploy
+# on: [push]
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@master
 
-    - name: LibComponent
-      uses: pork-chop-1/LibComponent@main
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: username/repo
-        TARGET_BRANCH: main
-        BUILD_SCRIPT: npm && npm run build
-        BUILD_DIR: blog/.vuepress/dist/
+#     - name: LibComponent
+#       uses: pork-chop-1/LibComponent@main
+#       env:
+#         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#         TARGET_REPO: username/repo
+#         TARGET_BRANCH: main
+#         BUILD_SCRIPT: npm && npm run build
+#         BUILD_DIR: blog/.vuepress/dist/

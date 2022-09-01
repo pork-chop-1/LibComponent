@@ -8,10 +8,10 @@ jobs:
       uses: actions/checkout@master
 
     - name: LibComponent
-      uses: pork-chop-1/LibComponent@master
+      uses: pork-chop-1/LibComponent@main
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: username/repo
-        TARGET_BRANCH: master
+        TARGET_BRANCH: main
         BUILD_SCRIPT: npm && npm run build
         BUILD_DIR: blog/.vuepress/dist/

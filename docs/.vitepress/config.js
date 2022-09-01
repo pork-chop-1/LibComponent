@@ -2,6 +2,8 @@ module.exports = {
   base: '/LibComponent/',
   title: 'Hello VuePress',
   description: 'Just playing around',
+  lang: 'zh-CN',
+  outDir: '../dist',
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
@@ -10,10 +12,10 @@ module.exports = {
     sidebar: {
       '/components/': [
         {
-          title: 'Group 1',   // 必要的
-          collapsable: false, // 可选的, 默认值是 true,
-          children: [
-            ['Table', '表格']
+          text: 'Group 1',   // 必要的
+          collapsible: true,
+          items: [
+            { text: '表格', link: '/components/Table' }
           ]
         },
       ]

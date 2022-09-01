@@ -1,5 +1,5 @@
 module.exports = {
-  base: 'LibComponent',
+  base: '/LibComponent/',
   title: 'Hello VuePress',
   description: 'Just playing around',
   themeConfig: {
